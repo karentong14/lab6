@@ -1,7 +1,7 @@
 # code by Ethan Calby and Karen Tong
 
 
-def encoder():
+def encoder():  # Coded by Karen Tong
     global encoded
     password = input("Please enter your password to encode: ")
     print("Your password has been encoded and stored!\n")
@@ -13,7 +13,7 @@ def encoder():
     return encoded
 
 
-def decoder(encoded):
+def decoder(encoded):  # Coded by Ethan Calby
     decoded = ""
     for char in encoded:
         decoded += str(int(char) - 3)
@@ -21,7 +21,7 @@ def decoder(encoded):
     return decoded
 
 
-def main():
+def main():  # Coded by Karen Tong
     global password
     while True:
         print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n")
